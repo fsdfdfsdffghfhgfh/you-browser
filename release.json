@@ -1,0 +1,21 @@
+{
+  "name": "You",
+  "version": "0.2",
+  "platform": "Linux",
+  "filename": "You-0.2-linux.tar.gz",
+  "url": "downloads/You-0.2-linux.tar.gz",
+  "size": 59744,
+  "sha256": "0aed6a260ce6a7df2158b336bfbbf4a34e9a20c420ed4c3a19eaf8573016c719",
+  "files": 15,
+  "format": "tar.gz",
+  "package_type": "source",
+  "includes_dependencies": false,
+  "built_at": "2026-10-24T16:22:26.344570+00:00",
+  "requirements": [
+    "Python 3.10+",
+    "GTK 4.10+",
+    "libadwaita 1.5+",
+    "WebKitGTK 6.0",
+    "PyGObject"
+  ]
+}

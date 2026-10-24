@@ -1,0 +1,27 @@
+{
+  "android": {
+    "filename": "You-0.2-android.apk",
+    "platform": "Android",
+    "version": "0.2",
+    "requirements": "Android 8.0+ и установленный Android System WebView",
+    "engine": "Android System WebView",
+    "tested_on_device": false,
+    "signing_certificate_sha256": "3180fe79b30726db121abbb3112f57d3559366dd6faf36d9193ae2679b9370be",
+    "url": "downloads/You-0.2-android.apk",
+    "size": 37396,
+    "sha256": "6cf39c8bc81e97071a2f4d6d8d000530c8964b60f78f8bdce403565f96dd46e7"
+  },
+  "windows": {
+    "filename": "You-0.2-windows-x64.exe",
+    "platform": "Windows x64",
+    "version": "0.2",
+    "requirements": "Windows 10/11 x64 и Microsoft Edge WebView2 Runtime",
+    "engine": "Microsoft Edge WebView2",
+    "tested_on_device": false,
+    "native_ui_tested_under_wine": true,
+    "wine_web_rendering": "GPU process crashes observed in isolated Wine tests; compatibility not guaranteed",
+    "url": "downloads/You-0.2-windows-x64.exe",
+    "size": 72076254,
+    "sha256": "5143e85a3bc3dd7023b63ce3c70dbfef1172f36faf819104c9e0869b6be6e594"
+  }
+}

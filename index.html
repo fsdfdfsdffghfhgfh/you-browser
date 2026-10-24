@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1315">
+  <meta name="description" content="Скачай браузер You: Linux, APK для Android и EXE для Windows x64. Описание возможностей, требований и первых сборок.">
+  <title>You — твой интернет, твои правила</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="You — главная"><img src="icon.svg" width="36" height="36" alt=""><span>You<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню"><span></span><span></span></button>
+    <nav id="navigation" class="navigation" aria-label="Навигация"><a href="#features">Возможности</a><a href="#install">Как запустить</a><a href="#faq">Вопросы</a></nav>
+    <a class="button button-small button-outline header-download" href="#download">Скачать You <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="release-pill"><span class="status-dot"></span> Знакомься, You <span class="pill-version" data-version>0.2</span></div>
+        <h1>Твой интернет.<br><span>Твои правила.</span></h1>
+        <p class="hero-description">Меньше лишнего. Больше твоего.<br>You — простой браузер для Linux, в котором всё важное уже под рукой.</p>
+        <div class="hero-actions"><a class="button button-primary" href="downloads/You-0.2-linux.tar.gz" data-download download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg> Скачать для Linux</a><a class="text-link" href="#platforms">APK и EXE <span aria-hidden="true">↓</span></a></div>
+        <p class="download-note">Версия <span data-version>0.2</span> <span class="separator">·</span> <span data-size>архив .tar.gz</span> <span class="separator">·</span> Без регистрации</p>
+        <p class="dependency-note">Архив приложения. Для запуска нужны Python и системные GTK / WebKitGTK.</p>
+      </div>
+      <div class="hero-visual" aria-label="Схематичный предпросмотр интерфейса You">
+        <div class="visual-glow"></div>
+        <div class="browser-preview">
+          <div class="preview-tabs"><div class="window-dots"><i></i><i></i><i></i></div><span class="preview-tab active"><img src="icon.svg" alt="" width="12" height="12"> Новая вкладка <b>×</b></span><span class="preview-tab secondary">Мои открытия <b>×</b></span><span class="preview-plus">+</span></div>
+          <div class="preview-toolbar"><span class="preview-arrows">← &nbsp; → &nbsp; ↻</span><div class="preview-address"><span aria-hidden="true">⌕</span> Поиск в You <span aria-hidden="true">☆</span></div><span class="preview-menu">⋮</span></div>
+          <div class="preview-content"><div class="preview-logo"><img src="icon.svg" width="32" height="32" alt="">You<span>.</span></div><span class="preview-eyebrow">ТВОЁ ПРОСТРАНСТВО В ИНТЕРНЕТЕ</span><p class="preview-title">Интернет.<br><span>По-твоему.</span></p><div class="preview-search"><span>⌕</span> Найти что-нибудь интересное <b>→</b></div><div class="preview-tiles"><span><i>W</i>Википедия</span><span><i>⌘</i>GitHub</span><span><i>Я</i>Яндекс</span></div></div>
+          <div class="preview-bottom"><span class="status-dot"></span> Готов к твоим открытиям <span>YOU BROWSER</span></div>
+        </div>
+        <div class="floating-note"><span class="spark" aria-hidden="true">✳</span><span>Никакого шума.<br><strong>Только ты и интернет.</strong></span></div>
+        <span class="preview-caption">Иллюстрация интерфейса</span>
+      </div>
+    </section>
+
+    <div class="platform-strip wrap"><span class="strip-label">ПРОСТОЙ СНАРУЖИ. НАСТОЯЩИЙ ВНУТРИ.</span><div><span>Linux</span><i></i><span>GTK4</span><i></i><span>WebKitGTK</span><i></i><span>Python</span></div></div>
+
+    <section id="features" class="features wrap section">
+      <div class="section-heading"><div><p class="eyebrow">ВОЗМОЖНОСТИ LINUX-ВЕРСИИ 0.2</p><h2>Всё, что нужно.<br><span>На своём месте.</span></h2></div><p>Android и Windows — отдельные первые версии. <br>Их возможности описаны возле загрузок ниже.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">▤</div><span class="feature-number">01</span><h3>Вкладки без хаоса</h3><p>Закрепляй важное, дублируй страницы, выключай лишний звук. Потерял вкладку? Найди её по названию.</p><span class="card-tag">Всё под контролем</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">☆</div><span class="feature-number">02</span><h3>Важное — рядом</h3><p>Боковая панель закладок, история и локальные подсказки адреса. Импортируй свои ссылки и продолжай с привычного.</p><span class="card-tag">Сохраняй свои открытия</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">◈</div><span class="feature-number">03</span><h3>Личное пространство</h3><p>Приватные окна не записывают историю и не сохраняют данные сайтов после закрытия. Это не VPN и не анонимизация.</p><span class="card-tag">Отдельный контекст</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">↺</div><span class="feature-number">04</span><h3>Продолжай с того же места</h3><p>Возвращай обычные окна после перезапуска. Сохраняй подборки сайтов под своим названием. Формы не восстанавливаются.</p><span class="card-tag">Твой ритм работы</span></article>
+      </div>
+      <div class="honest-note"><span aria-hidden="true">✦</span><p>В версии 0.2 добавлены <strong>20 работающих функций удобства</strong>. Внутри есть каталог из 500 идей: остальные 480 отмечены как план, а не готовые возможности.</p></div>
+    </section>
+
+    <section id="download" class="download-section wrap">
+      <div class="download-panel"><div class="download-copy"><p class="eyebrow">ПОРА ПОЗНАКОМИТЬСЯ ПОБЛИЖЕ</p><h2>Забирай You.<br>Остальное — за тобой<span>.</span></h2><p>Архив с приложением, исходным кодом и инструкцией.<br>Без истории, cookies и профилей пользователей.</p></div><div class="download-action"><div class="platform-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v10H5zm7 10v4m-5 0h10"/></svg> Для Linux <span data-version>0.2</span></div><a class="button button-primary button-wide" href="downloads/You-0.2-linux.tar.gz" data-download download>Скачать You <span aria-hidden="true">↓</span></a><span class="archive-label" data-filename>You-0.2-linux.tar.gz</span><span class="archive-meta"><span data-size>Размер уточняется</span> <span>·</span> Python + GTK4 / WebKitGTK</span></div></div>
+      <div class="checksum"><div><span class="checksum-label">SHA-256</span><code id="checksum">Загружаем контрольную сумму…</code></div><button class="copy-hash" id="copy-hash" disabled aria-label="Скопировать контрольную сумму">Скопировать <span aria-hidden="true">⧉</span></button></div>
+      <p class="release-error" id="release-error" role="status" hidden>Не удалось прочитать сведения о релизе. Обнови страницу или открой информацию о релизе внизу сайта.</p>
+      <div id="platforms" class="platform-downloads">
+        <div class="section-heading"><div><p class="eyebrow">ТЕПЕРЬ НЕ ТОЛЬКО LINUX</p><h2>Android и Windows<span>.</span></h2></div><p>Android 0.2 · Windows 0.2 <br>Не полный перенос Linux-версии</p></div>
+        <div class="platform-grid">
+          <article class="platform-card" data-platform="android">
+            <span class="release-pill">Android · 0.2 · новый интерфейс</span>
+            <h3>You для Android</h3>
+            <p>Тёмный стиль Linux и Windows: мятные акценты, вкладки сверху, векторные кнопки, скруглённая адресная строка, меню и поиск по странице. Новая стартовая страница «Интернет. По-твоему.» с быстрыми ссылками и закладками.</p>
+            <p><strong>Android 8.0+</strong> и системный WebView. Версия 0.2 подписана тем же ключом, что 0.1: устанавливай поверх, не удаляя приложение, чтобы сохранить его данные. Проверка на Android-устройстве пока не выполнена.</p>
+            <p>Без приватного режима и VPN. Загрузка файлов передаётся внешнему приложению. На Quest это не VR-браузер: установка и работа в 2D не проверены.</p>
+            <a class="button button-primary button-wide" href="downloads/You-0.2-android.apk" download="You-0.2-android.apk" data-platform-link>Скачать APK 0.2 <span aria-hidden="true">↓</span></a>
+            <span class="archive-label">You-0.2-android.apk · <span data-platform-size>размер в данных сборок</span></span>
+            <details class="platform-checksum"><summary>SHA-256 APK</summary><code data-platform-hash>Смотри platforms.json</code></details>
+          </article>
+          <article class="platform-card" data-platform="windows">
+            <span class="release-pill">Windows x64 · 0.2 · новый интерфейс</span>
+            <h3>You для Windows</h3>
+            <p>Теперь в тёмном стиле You для Linux: вкладки сверху, мятные акценты, новая вкладка с поиском и быстрыми ссылками, боковая панель закладок и тёмное меню.</p>
+            <p><strong>Windows 10/11 x64</strong> и установленный WebView2 Runtime. Это переносимый EXE, не установщик. .NET включён; WebView2 используется из системы.</p>
+            <p>Интерфейс проверен в Wine. <strong>Работа сайтов в Wine / PortProton не гарантируется:</strong> в тестах наблюдался сбой процесса отрисовки WebView2. На настоящей Windows версия пока не проверена. Без приватного режима и VPN. EXE без Authenticode-подписи; защиту Windows отключать не нужно.</p>
+            <details class="platform-preview"><summary>Посмотреть настоящий интерфейс ↗</summary><a href="you-windows-0.2.png" target="_blank" rel="noopener"><img src="you-windows-0.2.png" alt="Настоящий интерфейс You для Windows 0.2: тёмные вкладки и стартовая страница с поиском" width="1200" height="820" loading="lazy"></a><p>Снимок нативного интерфейса в отдельном тестовом окне Wine, не макет и не доказательство работы сайтов.</p></details>
+            <a class="button button-primary button-wide" href="downloads/You-0.2-windows-x64.exe" download="You-0.2-windows-x64.exe" data-platform-link>Скачать EXE 0.2 <span aria-hidden="true">↓</span></a>
+            <span class="archive-label">You-0.2-windows-x64.exe · <span data-platform-size>размер в данных сборок</span></span>
+            <details class="platform-checksum"><summary>SHA-256 EXE</summary><code data-platform-hash>Смотри platforms.json</code></details>
+          </article>
+        </div>
+        <p class="platform-notice">Запуск на настоящих Android- и Windows-устройствах пока не проверен. Нативный интерфейс Windows проверен отдельно; совместимость браузерного движка с Wine остаётся ограничением. Камера, микрофон и геолокация сайтам в этих версиях недоступны. Linux-приложение не изменено. <a href="platforms.json">Размеры, требования и контрольные суммы ↗</a></p>
+        <p class="release-error" id="platform-error" role="status" hidden>Не удалось загрузить сведения об APK/EXE. Перед скачиванием проверь данные сборок по ссылке выше.</p>
+      </div>
+    </section>
+
+    <section id="install" class="install wrap section">
+      <div class="section-heading"><div><p class="eyebrow">ЗАПУСК НА LINUX</p><h2>Три шага.<br><span>И ты в You.</span></h2></div><p>Сначала проверь зависимости.<br>Затем скачай, распакуй и запускай.</p></div>
+      <div class="install-grid"><div class="install-steps"><article><span>1</span><div><h3>Скачай архив</h3><p>Выбери отдельную папку для распаковки. Это архив приложения для Linux, не установщик Windows или Android.</p></div></article><article><span>2</span><div><h3>Проверь, что всё на месте</h3><p>Нужны Python 3.10+, PyGObject, GTK 4.10+, libadwaita 1.5+ и WebKitGTK 6.0. Они устанавливаются через пакетный менеджер Linux.</p></div></article><article><span>3</span><div><h3>Запусти You</h3><p>Открой терминал в папке с архивом и выполни команды справа. Браузер по умолчанию не изменится.</p></div></article></div><div class="terminal"><div class="terminal-bar"><span class="terminal-dots"><i></i><i></i><i></i></span><span>Первый запуск</span><button id="copy-command" class="terminal-copy" aria-label="Скопировать команды запуска">Скопировать ⧉</button></div><pre><code id="install-command"><span class="comment"># Распакуй в отдельной папке</span>
+tar -xzf You-0.2-linux.tar.gz
+cd You-0.2
+./run.sh
+
+<span class="comment"># По желанию: добавить в меню</span>
+python3 install_launcher.py</code></pre><div class="terminal-foot"><span class="status-dot"></span> Системные зависимости в архив не включены</div></div></div>
+    </section>
+
+    <section id="faq" class="faq wrap section"><div class="faq-intro"><p class="eyebrow">ЕСЛИ ОСТАЛИСЬ ВОПРОСЫ</p><h2>Коротко<br><span>о главном.</span></h2><p>Без мелкого шрифта<br>и больших обещаний.</p></div><div class="faq-list">
+      <details><summary>Это настоящий браузер или просто страница?<span aria-hidden="true">+</span></summary><p>You — отдельное настольное приложение. Сайты открывает системный движок WebKitGTK. Это не iframe и не оболочка, запускающая другой браузер.</p></details>
+      <details><summary>На каких устройствах работает You?<span aria-hidden="true">+</span></summary><p>Есть Linux-версия 0.2, Android 0.2 для Android 8.0+ (APK) и Windows 0.2 для Windows 10/11 x64 (EXE). Android требует системный WebView, Windows — WebView2 Runtime. Их запуск на настоящих целевых устройствах ещё не проверен; работа сайтов через Wine / PortProton не гарантируется. Полного набора возможностей Linux в этих версиях нет. Версии для iPhone нет.</p></details>
+      <details><summary>Как запустить APK и EXE?<span aria-hidden="true">+</span></summary><p>Android: скачай или перенеси APK на своё устройство, открой файл и разреши установку для выбранного источника, если система попросит. Windows: сохрани EXE в отдельную папку и запусти. Если WebView2 отсутствует, You покажет адрес официального сайта Microsoft; автоматической установки нет. Не отключай антивирус или системную защиту. localhost работает только на этом ПК. Для других устройств в той же домашней сети сайт запускается с --lan: используй напечатанный сетевой адрес компьютера вместо localhost.</p></details>
+      <details><summary>Почему скачивается архив, а не установщик?<span aria-hidden="true">+</span></summary><p>Это первая локальная поставка: архив с кодом, ресурсами и скриптом запуска. Python-библиотеки и браузерный движок используются из системы. Готовый автономный AppImage здесь не предлагается.</p></details>
+      <details><summary>Есть ли в архиве мои данные?<span aria-hidden="true">+</span></summary><p>Нет. В архив попадают только файлы приложения из явного списка. История, cookies, пароли, профили, кэш и скачанные файлы не включаются. Профиль создаётся на компьютере, где ты запускаешь You.</p></details>
+      <details><summary>Будет ли YouTube работать без VPN?<span aria-hidden="true">+</span></summary><p>Обход блокировок в You не настроен. Доступность YouTube зависит от сети. Браузер не обещает обойти ограничения провайдера.</p></details>
+      <details><summary>Как обновлять браузер и движок?<span aria-hidden="true">+</span></summary><p>Новый архив приложения скачивается отдельно. WebKitGTK обновляется через обновления Linux. Проверку сертификатов и системную защиту You не отключает.</p></details>
+    </div></section>
+
+    <section class="final-call wrap"><img src="icon.svg" alt="" width="42" height="42"><p>Меньше лишнего.<br><strong>Больше You.</strong></p><a class="text-link" href="#download">Начать знакомство <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="footer wrap"><a class="brand brand-footer" href="#"><img src="icon.svg" width="25" height="25" alt=""><span>You.</span></a><span>Страница загрузки You <span class="footer-dot">·</span> Сделано для твоих открытий</span><div><a href="README.txt" target="_blank" rel="noopener">Инструкция ↗</a><a href="release.json" target="_blank" rel="noopener">Данные релиза ↗</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">Скачивание и инструкция работают без JavaScript. Размер и SHA-256 можно посмотреть в <a href="release.json">данных релиза</a>.</p></noscript>
+</body>
+</html>
